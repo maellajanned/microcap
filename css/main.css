@@ -65,6 +65,7 @@ hr {
 
 .tabs a:hover {
 	background-position:0% -42px;
+	text-decoration: none;
 	}
 
 .tabs a:hover span {
