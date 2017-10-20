@@ -104,21 +104,27 @@ p{
 	height: 536px;
 	opacity: 0;
 	margin-top: -335px;
-
+	padding: 10px;
+	text-align:left;
+	vertical-align:middle;
 }
 #blg2{
 	width: 344px;
 	height: 536px;
 	opacity: 0;
 	margin-top: -370px;
-
+	padding: 10px;
+	text-align:left;
+	vertical-align: baseline;
 }
 #blg3{
 	width: 344px;
 	height: 536px;
 	opacity: 0;
 	margin-top: -383px;
-
+	padding: 4px;
+	text-align:left;
+	vertical-align:middle;
 }
 .blg img{
 	margin-left: 35px;
