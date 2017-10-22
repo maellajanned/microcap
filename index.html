@@ -3,23 +3,33 @@
 <head>
 <title>MicroCap</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="J.Site">
+<meta name="author" content="J.Site">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="css/main.css" type="text/css" />
-<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
-  <div class="logo">
+    <div class="container">
+      <div class="logo">
+
     <img src="" alt="" />
+  </div>
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">MENU</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Connexion</a>
+      <a href="#">Accueil</a>
+      <a href="#">Qui Sommes Nous?</a>
+      <a href="#">Banque de Projets</a>
+    </div>
   </div>
 <div class="tabs">
 <ul>
   <li><a href=""><span>Connexion</span></a></li>
 </ul>
 </div>
-<hr />
 <div class="tabs">
   <ul>
     <li><a href=""><span>Banques de Projets</span></a></li>
@@ -30,12 +40,13 @@
   <h1>Micro Capital: Les Entrepreneurs Solidaires</h1>
   <h2>"Se Former, S'investir, Puis investir"</h2>
 </div>
+</div>
   <div class="container">
   <div class="row ">
     <div class="col-xs-12 col-md-4 blg">
-      <center><h5>Vous êtes un INVESTISEUR?</h5></center>
+      <center><h5 class="col-md-12">Vous êtes un INVESTISEUR?</h5></center>
       <img src="images/invest.jpg" alt="investir" />
-     <figcaption id="blg1" class="hidden-xs bl1">
+     <figcaption id="blg1" class="col-xs-12">
       <center><h5>Vous êtes un INVESTISEUR?</h5></center>
         Profitez du système de gestion de risque de microcap
         pour investir sereinement aux côtés de nos entrepreneures quelque soit la phase du projet. <br>
@@ -48,7 +59,7 @@
     <div class="col-xs-12 col-md-4 blg">
       <center><h5>Vous êtes un ENTREPRENEUR?</h5></center>
         <img src="images/entre.jpg" alt="entreprendre" />
-      <figcaption id="blg2" class="hidden-xs bl1">
+      <figcaption id="blg2" class="col-xs-12 bl1">
         <center><h5>Vous êtes un ENTREPRENEUR?</h5></center>
         Vous avez certainement déjà la notion de Gestion de la trésorerie et ce n'est pas toujours facile.<br>
         Le service <strong>MICROCAP</strong> vous garantie la solution appropriée au moment le plus opportun.
@@ -64,12 +75,12 @@
     <div class="col-xs-12 col-md-4 blg">
       <center><h5>Souhaitez vous entreprendre Aujourd'hui <br>ou Demain?</h5></center>
       <img src="images/dem.jpg" alt="today" />
-      <figcaption id="blg3" class="hidden-xs bl1">
+      <figcaption id="blg3" class="col-xs-12 bl1">
         <center><h5>Souhaitez vous entreprendre Aujourd'hui <br>ou Demain?</h5></center>
         Le Chemin du Combattant classique vous attend:<br>
         &nbsp; *Rediger votre Projet.<br>
         &nbsp; *Trouver des fonds propres.<br>
-        &nbsp; *Immatriculer votre société au RCS.<br><br>
+        &nbsp; *Immatriculer votre société au RCS.<br>
         Tout ce qu'il faut pour vous préparer au plus important, conquérir les premiers clients alors
         la plateforme microcapital est l'outil idéal pour:<br>
         &nbsp; *Découvrir Progressivement l'entrepreneuriat.<br>
@@ -89,8 +100,8 @@
       </div>
     </div>
   </div>
-
 </footer>
-
+</div>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
