@@ -6,102 +6,228 @@
 <meta name="author" content="J.Site">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="./bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/main.css" type="text/css" />
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
-    <div class="container">
-      <div class="logo">
-
-    <img src="" alt="" />
-  </div>
-  <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">MENU</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Connexion</a>
-      <a href="#">Accueil</a>
-      <a href="#">Qui Sommes Nous?</a>
-      <a href="#">Banque de Projets</a>
-    </div>
-  </div>
-<div class="tabs">
-<ul>
-  <li><a href=""><span>Connexion</span></a></li>
-</ul>
-</div>
-<div class="tabs">
-  <ul>
-    <li><a href=""><span>Banques de Projets</span></a></li>
-    <li><a href=""><span>Qui Sommes Nous?</span></a></li>
-  </ul>
-</div>
-  <div class="cent">
-  <h1>Micro Capital: Les Entrepreneurs Solidaires</h1>
-  <h2>"Se Former, S'investir, Puis investir"</h2>
-</div>
-</div>
+      <nav class="navbar navbar-default">
   <div class="container">
-  <div class="row ">
-    <div class="col-xs-12 col-md-4 blg">
-      <center><h5 class="col-md-12">Vous êtes un INVESTISEUR?</h5></center>
-      <img src="images/invest.jpg" alt="investir" />
-     <figcaption id="blg1" class="col-xs-12">
-      <center><h5>Vous êtes un INVESTISEUR?</h5></center>
-        Profitez du système de gestion de risque de microcap
-        pour investir sereinement aux côtés de nos entrepreneures quelque soit la phase du projet. <br>
-        Nous vous offrons: <br>
-        &nbsp; *Une pépinière de projets viabilisés.<br>
-        &nbsp; *Les garanties sur capital investi.<br>
-        &nbsp; *Des rendements très attrayants.<br>
-      </figcaption>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MICROCAP</a>
     </div>
-    <div class="col-xs-12 col-md-4 blg">
-      <center><h5>Vous êtes un ENTREPRENEUR?</h5></center>
-        <img src="images/entre.jpg" alt="entreprendre" />
-      <figcaption id="blg2" class="col-xs-12 bl1">
-        <center><h5>Vous êtes un ENTREPRENEUR?</h5></center>
-        Vous avez certainement déjà la notion de Gestion de la trésorerie et ce n'est pas toujours facile.<br>
-        Le service <strong>MICROCAP</strong> vous garantie la solution appropriée au moment le plus opportun.
-        Le recours ultime pour les moments difficiles les phases de votre parcours où: <br>
-        &nbsp; *Aucun business Angel ne s'interesse à vous. <br>
-        &nbsp; *Aucune banque ne peut vous accompagner. <br>
-        &nbsp; *Aucune subvention ou Aide ne vous correspond. <br>
-        Les sytèmes de solidarité ont fait leurs preuves déjà dans la santé et le chômage.<br>
-        <strong>Microcap</strong> est le système de solidarité pour l'entreprenariat, une architecture et concept
-        innovant qui allie efficacité, sécurité et convivialité.
-      </figcaption>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-2">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#1.1">Accueil</a></li>
+        <li><a href="#">Qui Sommes Nous?</a></li>
+        <li><a href="#">Partenaires</a></li>
+        <li><a href="#">Banque de Projets</a></li>
+        <li><a href="#">Contact</a></li>
+
+        <li>
+          <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Connexion</a>
+        </li>
+      </ul>
+      <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+        <form class="navbar-form navbar-right form-inline" role="form">
+          <div class="form-group">
+            <label class="sr-only" for="Email">Email</label>
+            <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="Password">Mot de passe</label>
+            <input type="password" class="form-control" id="Password" placeholder="Password" required />
+          </div>
+          <button type="submit" class="btn btn-success">Connexion</button>
+        </form>
+      </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav><!-- /.navbar -->
+<div class="container">
+  <!--================TITLE============ -->
+
+<!--=============End Title ============-->
+  <!-- slide -->
+  <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner">
+             <div class="item active">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                         <div class="col-md-9">
+                             <h2>Slide 1</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="item">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                         <div class="col-md-9">
+                             <h2>Slide 2</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="item">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                         <div class="col-md-9">
+                             <h2>Slide 4</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="item">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                         <div class="col-md-9">
+                             <h2>Slide 3</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         <!-- End Item -->
+         </div>
+         <!-- End Carousel Inner -->
+
+     </div>
+
+  <!--/.slide -->
+
+    <div class="row">
+      <div class="cent">
+      <h1>Micro Capital: Les Entrepreneurs Solidaires</h1>
+      <h2>"Se Former, S'investir, Puis investir"</h2>
     </div>
-    <div class="col-xs-12 col-md-4 blg">
-      <center><h5>Souhaitez vous entreprendre Aujourd'hui <br>ou Demain?</h5></center>
-      <img src="images/dem.jpg" alt="today" />
-      <figcaption id="blg3" class="col-xs-12 bl1">
-        <center><h5>Souhaitez vous entreprendre Aujourd'hui <br>ou Demain?</h5></center>
-        Le Chemin du Combattant classique vous attend:<br>
-        &nbsp; *Rediger votre Projet.<br>
-        &nbsp; *Trouver des fonds propres.<br>
-        &nbsp; *Immatriculer votre société au RCS.<br>
-        Tout ce qu'il faut pour vous préparer au plus important, conquérir les premiers clients alors
-        la plateforme microcapital est l'outil idéal pour:<br>
-        &nbsp; *Découvrir Progressivement l'entrepreneuriat.<br>
-        &nbsp; *Rencontrer vos futurs associés et clients.<br>
-        &nbsp; *Se former à l'entreprenariat par la pratique en participant aux projets d'autres entrepreneurs.<br>
-      </figcaption>
+    	<div class="col-lg-3">
+    				<div class="cuadro_intro_hover ">
+						<p style="text-align:center;">
+						<center><img src="images/invest.jpg" class="img-responsive" alt=""></center>
+						</p>
+            <h3 style="text-align:center; color:white; margin-top:55px;">Vous êtes un INVESTISSEUR?</h3>
+            <p style="text-align:center;">Profitez du système de gestion de risque de microcap
+            pour investir sereinement aux côtés de nos entrepreneures quelque soit la phase du projet.....</p>
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h3 class="to1">Vous êtes un INVESTISSEUR?</h3>
+								<p>Profitez du système de gestion de risque de microcap
+                pour investir sereinement aux côtés de nos entrepreneures quelque soit la phase du projet. <br><br>
+                Nous vous offrons: <br>
+                &nbsp; *Une pépinière de projets viabilisés.<br>
+                &nbsp; *Les garanties sur capital investi.<br>
+                &nbsp; *Des rendements très attrayants.<br></p>
+								<!--<a class=" btn btn-default" href="http://mispicaderos.com"><span class="glyphicon glyphicon-plus"> INFO</span></a>-->
+							</div>
+						</div>
+					</div>
+
+	    </div>
+        <div class="col-lg-3">
+        			<div class="cuadro_intro_hover ">
+						<p style="text-align:center; ">
+							<center>	<img src="images/entre.jpg" class="img-responsive" alt=""></center>
+						</p>
+            <h3 style="text-align:center; color:white;margin-top:25px;">Vous êtes un Entrepreneur?</h3>
+            <p style="text-align:center;">Vous avez certainement déjà la notion de Gestion de la trésorerie et ce n'est pas toujours facile......</p>
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h3 class="to1">Vous êtes un ENTREPRENEUR?</h3>
+								<p>Vous avez certainement déjà la notion de Gestion de la trésorerie et ce n'est pas toujours facile.<br>
+                  Le service <strong>MICROCAP</strong> vous garantie la solution appropriée au moment le plus opportun où:<br>
+                  &nbsp; *Aucun business Angel ne s'interesse à vous. <br>
+                  &nbsp; *Aucune banque ne peut vous accompagner. <br>
+                  &nbsp; *Aucune subvention ou Aide ne vous correspond. <br>
+                  Les sytèmes de solidarité ont fait leurs preuves déjà dans la santé et le chômage.<br>
+                  <strong>Microcap</strong> est le système de solidarité pour l'entreprenariat, une architecture et concept
+                  innovant qui allie efficacité, sécurité et convivialité.</p>
+								<!--<a class=" btn btn-default" href="http://mispicaderos.com"><span class="glyphicon glyphicon-plus"> INFO</span></a>-->
+							</div>
+						</div>
+					</div>
+
+	    </div>
+        <div class="col-lg-3">
+        			<div class="cuadro_intro_hover ">
+						<p style="text-align:center;">
+					<center><img src="images/dem.jpg" class="img-responsive" alt=""></center>
+						</p>
+            <h3 style="text-align:center; color:white;">Entreprendre Aujourd'hui ou Demain?</h3>
+            <p style="text-align:center;">Vous avez certainement déjà la notion de Gestion de la trésorerie et ce n'est pas toujours facile......</p>
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h3 class="to1">Entreprendre Aujourd'hui ou Demain?</h3>
+								<p>  Le Chemin du Combattant classique vous attend:<br>
+                  &nbsp; *Rediger votre Projet.<br>
+                  &nbsp; *Trouver des fonds propres.<br>
+                  &nbsp; *Immatriculer votre société au RCS.<br>
+                  Tout ce qu'il faut pour vous préparer au plus important, conquérir les premiers clients alors
+                  la plateforme microcapital est l'outil idéal pour:<br>
+                  &nbsp; *Découvrir Progressivement l'entrepreneuriat.<br>
+                  &nbsp; *Rencontrer vos futurs associés et clients.<br>
+                  &nbsp; *Se former à l'entreprenariat par la pratique en participant aux projets d'autres entrepreneurs.<br></p>
+							<!--<a class=" btn btn-default" href="http://mispicaderos.com"><span class="glyphicon glyphicon-plus"> INFO</span></a>-->
+							</div>
+						</div>
+					</div>
+
+	    </div>
+        <div class="col-lg-3">
+        			<div class="cuadro_intro_hover ">
+						<p style="text-align:center; ">
+							<img src="http://placehold.it/1000x330" class="img-responsive" alt="">
+						</p>
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h3 class="to1">THIS IS H3</h3>
+								<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+								<!--<a class=" btn btn-default" href="http://mispicaderos.com"><span class="glyphicon glyphicon-plus"> INFO</span></a>-->
+							</div>
+						</div>
+					</div>
+
+	    </div>
     </div>
-  </div>
-</div>
+
 <footer>
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
         <p></p>
-        <hr class="small">
+        <!--<hr class="small">-->
         <p class="text-muted">Copyright &copy; Groupe A+ 2017</p>
       </div>
     </div>
   </div>
 </footer>
 </div>
-<script type="text/javascript" src="js/main.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

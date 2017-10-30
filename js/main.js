@@ -1,35 +1,31 @@
-// Copyright 2014-2017 The Bootstrap Authors
-// Copyright 2014-2017 Twitter, Inc.
-// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-  var msViewportStyle = document.createElement('style')
-  msViewportStyle.appendChild(
-    document.createTextNode(
-      '@-ms-viewport{width:auto!important}'
-    )
-  )
-  document.head.appendChild(msViewportStyle)
-}
+$(document).ready(function() {
 
-/*===== le dropdown=====*/
+           /* affix the navbar after scroll below header */
+$('#nav').affix({
+     offset: {
+       top: $('header').height()-$('#nav').height()
+     }
+});
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+/* highlight the top nav as scrolling occurs */
+$('body').scrollspy({ target: '#nav' })
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+/* smooth scrolling for scroll to top */
+$('.scroll-top').click(function(){
+ $('body,html').animate({scrollTop:0},1000);
+})
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+/* smooth scrolling for nav sections */
+$('#nav .navbar-nav li>a').click(function(){
+ var link = $(this).attr('href');
+ var posi = $(link).offset().top;
+ $('body,html').animate({scrollTop:posi},700);
+});
+  });  
+  /*fin navbar*/
+  $(document).ready(function(ev){
+      $('#custom_carousel').on('slide.bs.carousel', function (evt) {
+        $('#custom_carousel .controls li.active').removeClass('active');
+        $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
+      })
+  });
